@@ -7,6 +7,7 @@ const Lesson5 = () => {
     });
 
     const handleChange = (event) =>{
+        console.log(event)
         setUser((current)=>{
             return {...current, [event.target.name]:event.target.value }
         })
